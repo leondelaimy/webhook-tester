@@ -40,14 +40,14 @@ GITHUB_ACCESS_TOKEN=<enter secret>
 ```
 make up
 ```
-2. Commit changes & create a pull request
-3. Add a comment to trigger a merge request
-```
-#merge
-```
-4. Run queue worker to process received webhooks
+2. Run queue worker to process received webhooks
 ```
 rq worker
+```
+3. Commit changes & create a pull request
+4. Add a comment to trigger a merge request
+```
+#merge
 ```
 
 <br/>
