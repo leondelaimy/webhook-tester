@@ -11,4 +11,4 @@ RUN npm install -g localtunnel
 ENV SUBDOMAIN=webhook-receiver
 
 EXPOSE 8000
-CMD ["python", "receiver/receiver.py"]
+CMD ["python", "receiver/webhook.py"]
