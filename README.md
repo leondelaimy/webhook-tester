@@ -47,7 +47,7 @@ make up
 ```
 4. Run queue worker to process received webhooks
 ```
-make process_queue
+rq worker
 ```
 
 <br/>
