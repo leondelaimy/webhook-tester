@@ -4,6 +4,7 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile.receiver
+    env_file: .devcontainer/devcontainer.env
     depends_on:
       - redis
   redis:
