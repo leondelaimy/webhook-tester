@@ -4,3 +4,4 @@ redis
 rq
 pytest
 flake8
+requests
