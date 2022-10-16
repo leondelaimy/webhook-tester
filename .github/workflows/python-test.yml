@@ -4,6 +4,8 @@
 name: webhook-tester
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 

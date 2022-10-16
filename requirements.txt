@@ -1,0 +1,6 @@
+flask
+flask-localtunnel
+redis
+rq
+pytest
+flake8

@@ -1,0 +1,14 @@
+FROM python:alpine
+
+COPY . /app
+WORKDIR /app
+ENV PYTHONPATH /app
+
+RUN pip install -r requirements.txt
+RUN apk add --update npm
+RUN npm install -g localtunnel
+
+ENV SUBDOMAIN=webhook-receiver
+
+EXPOSE 8000
+CMD ["python", "receiver/receiver.py"]
