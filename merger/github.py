@@ -17,7 +17,6 @@ def get_pull_request(user, url):
     Call GitHub API to get pull request
     """
     try:
-        print(headers)
         response = requests.get(f"{url}", headers=headers, timeout=30)
         pull = response.json()
         response.raise_for_status()
@@ -44,7 +43,6 @@ def merge_pull_request(user, url):
     """
     try:
         data = get_pull_request(user, url)
-        print(headers)
         response = requests.put(
             f"{url}/merge", headers=headers, data=data, timeout=30)
         response.raise_for_status()
