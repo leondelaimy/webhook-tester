@@ -13,18 +13,18 @@
 ## Dependencies
 - Docker
 - VSCode devcontainer
-- GitHub
+- GitHub webhook
 
 <br/>
 
 ## Prerequisites
 
-1. Set up an issue_comment webhook via GitHub UI pointing to the localtunnel endpoint
-
-Payload URL: https://webhook-receiver.loca.lt \
-Content type: application/json \
+1. Set up a webhook via GitHub UI pointing to localtunnel endpoint
+```
+Payload URL: https://webhook-receiver.loca.lt
+Content type: application/json
 Create a secret for webhook verification
-
+```
 2. Update secrets in .devcontainer/devcontainer.env
 ```
 GITHUB_WEBHOOK_TOKEN=<enter secret>
