@@ -2,7 +2,7 @@
 Process issue comment webhooks
 """
 
-from merger.github import merge_pull_request
+from processor.github import merge_pull_request
 
 MERGE_COMMENT = '#merge'
 
