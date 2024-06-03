@@ -52,11 +52,13 @@ rq worker
 
 <br/>
 
+## Inspired by
+https://github.com/lscsoft/webhook-queue
+
 ## Tools
 https://github.com/microsoft/vscode-dev-containers \
 https://github.com/jakbin/flask-localtunnel \
 https://github.com/localtunnel/localtunnel \
-https://github.com/lscsoft/webhook-queue \
 https://github.com/rq/rq 
 
 ## Articles
